@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard - Smart Investments</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>User Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <h2>Choose Your Investment Plan</h2>
+    <form id="investmentForm">
+      <select id="plan" required>
+        <option value="">Select a Plan</option>
+        <option value="Starter Plan">Starter Plan (From Ten Thousand XAF)</option>
+        <option value="Growth Plan">Growth Plan (From Fifty Thousand XAF)</option>
+        <option value="Premium Plan">Premium Plan (From One Hundred Thousand XAF)</option>
+      </select>
+      <input type="text" id="transaction" placeholder="Enter Transaction Number" required>
+      <button type="submit">Submit Investment</button>
+    </form>
+
+    <section>
+      <h3>Your Submitted Investments</h3>
+      <ul id="userInvestments"></ul>
+    </section>
+  </main>
+</body>
+</html>
